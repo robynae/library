@@ -23,25 +23,25 @@
             <button class="close-modal">X</button>
             <h2>Add book</h2>
             <p>Please enter the title of your book, author, and publishing year.</p>
-            <form action="" class="form" method="dialog">
+            <form action="" class="form" id="form" method="dialog">
                 <div class="row">
                     <label for="title">Title</label>
-                    <input type="text" id="title" name="title">
+                    <input type="text" id="title" name="title" required>
                 </div>
                 <div class="row">
                     <label for="author">Author</label>
-                    <input type="text" id="author" name="author">
+                    <input type="text" id="author" name="author" required>
                 </div>
                 <div class="row">
                     <label for="year">Year Published</label>
-                    <input type="text" id="year" name="year">
+                    <input type="tel" id="year" name="year" required>
                 </div>
                 <div class="row">
                     <label for="read">Have you read it?</label>
                     <input type="checkbox" id="read">
                 </div>
             </form>
-            <button class="submit">Add book</button>
+            <button class="submit" form="form" type="submit">Add book</button>
         </dialog>
     </div>
 </body>
