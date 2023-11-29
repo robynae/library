@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Pixelify+Sans&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -14,11 +14,16 @@
     <div class="container">
         <div class="header-container">
             <h1>my library.</h1>
-            <button class="add-book">+</button>
+            <button class="add-book" id="add">+</button>
         </div>
         <div class="library-container">
             <div class="books-container"></div>
         </div>
+        <dialog class="modal">
+            <h2>Add book</h2>
+            <p>Some interesting flavor text.</p>
+            <button class="close-modal"></button>
+        </dialog>
     </div>
 </body>
 </html>
