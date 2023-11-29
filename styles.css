@@ -65,25 +65,39 @@ html, body {
 }
 
 .modal {
-    width: 40%;
-    height: 80%;
+    max-width: 100ch;
+    border: 0;
+    overflow: hidden;
 }
 
 .close-modal {
     position: relative;
-    left: 95%;
+    left: 90%;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
     border: none;
     font-size: 1.2rem;
     font-weight: 700;
-    background-color: #15803d;
-    color: white;
+    background-color: white;
+    color: #15803d;
 }
 
-.close-modal:hover {
-    background-color: white;
-    border: 1px solid #15803d;
-    color: #15803d;
+.modal > h2 {
+    position: relative;
+    left: 40%;
+}
+
+.form {
+    display: table;
+    gap: 2em;
+    width: 90%;
+}
+
+.form > .row {
+    display: table-row;
+    height: 2rem;
+}
+
+.row > label, .row > input {
+    display: table-cell;
 }
