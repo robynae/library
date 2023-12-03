@@ -3,6 +3,7 @@ html, body {
     padding: 0;
     box-sizing: border-box;
     font-family: "Merriweather", serif;
+    background-color: #f7fee7;
 }
 
 .container {
@@ -85,19 +86,108 @@ html, body {
 .modal > h2 {
     position: relative;
     left: 40%;
+    margin-bottom: 0;
+}
+
+.modal > p {
+    margin-top: 0;
+    color: #475569;
 }
 
 .form {
     display: table;
     gap: 2em;
     width: 90%;
+    position: relative;
+    left: 15%;
+    padding-bottom: 20px;
 }
 
 .form > .row {
     display: table-row;
-    height: 2rem;
+    height: 3rem;
 }
 
 .row > label, .row > input {
     display: table-cell;
 }
+
+.row > input {
+    border-radius: 5px;
+    border: 1px solid #475569;
+    font-family: "Merriweather", serif;
+}
+
+.submit {
+    box-sizing: border-box;
+    position: relative;
+    left: 40%;
+    margin: 20px auto;
+
+    width: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+    border: none;
+    background-color: #15803d;
+    color: white;
+
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+}
+
+.submit:hover {
+    background-color: white;
+    color: #15803d;
+    border: 1px solid #15803d;
+}
+
+.books-container {
+    width: 95%;
+    height: 100%;
+    margin: auto;
+    margin-top: 30px;
+
+    display: grid;
+    grid-template-columns: repeat(5, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, 300px);
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.card p {
+    padding-left: 50px;
+    color: #475569
+}
+
+.card-header {
+    display: flex;
+    justify-content: center;
+    background-color: #15803d;
+}
+
+.card-header > h2 {
+    color: white;
+}
+
+.bold {
+    font-weight: 700;
+    color: black;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+.card-button {
+    margin-top: 50px;
+    margin-right: 10px;
+}
+
