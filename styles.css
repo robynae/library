@@ -160,7 +160,7 @@ html, body {
     flex-direction: column;
 }
 
-.card p {
+.para1, .para2, .para3 {
     padding-left: 50px;
     color: #475569
 }
@@ -171,7 +171,7 @@ html, body {
     background-color: #15803d;
 }
 
-.card-header > h2 {
+.card-title {
     color: white;
 }
 
