@@ -160,9 +160,9 @@ html, body {
     flex-direction: column;
 }
 
-.para1, .para2, .para3 {
+.para {
     padding-left: 50px;
-    color: #475569
+    color: #475569;
 }
 
 .card-header {
@@ -175,15 +175,41 @@ html, body {
     color: white;
 }
 
-.bold {
-    font-weight: 700;
-    color: black;
-}
-
 .card-buttons {
     display: flex;
-    justify-content: end;
+    height: 100%;
+    justify-content: center;
     gap: 10px;
+}
+
+.read-button, .delete-button {
+    width: 40%;
+    height: 45%;
+    border: none;
+    border-radius: 10px;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    color: white;
+}
+
+.read-button {
+    background-color: #15803d;
+}
+
+.read-button:hover {
+    color: #15803d;
+    background-color: white;
+    border: 1px solid #15803d;
+}
+
+.delete-button:hover {
+    color: #ef4444;
+    background-color: white;
+    border: 1px solid #ef4444;
+}
+
+.delete-button {
+    background-color: #ef4444;
 }
 
 .card-button {
