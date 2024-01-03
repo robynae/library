@@ -19,12 +19,16 @@ closeModal.addEventListener('click', () => {
     modal.close();
 })
 //form asks for book info;
-function Book(title, author, year, read) {
-    this.title = title;
-    this.author = author;
-    this.year = year;
-    this.read = read;
+class Book {
+    constructor(title, author, year, read) {
+      this.title = title;
+      this.author = author;
+      this.year = year;
+      this.read = read;
+        }
 }
+
+
 //what the user puts in the input becomes the arguments for object constructor
 function createBook() {
     bookTitle = document.querySelector('#title').value;
